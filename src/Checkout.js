@@ -7,8 +7,10 @@ const Checkout = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // ✅ Receive selected items from Cart
-  const selectedItems = Array.isArray(location.state) ? location.state : [];
+  // ✅ MEMOIZED selectedItems (FIX FOR ESLINT + NETLIFY)
+  const selectedItems = useMemo(() => {
+    return Array.isArray(location.state) ? location.state : [];
+  }, [location.state]);
 
   // ---------------- ADDRESSES ----------------
   const [addresses] = useState([

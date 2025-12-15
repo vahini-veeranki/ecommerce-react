@@ -1,0 +1,54 @@
+.navbar {
+  background: #222;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+.navbar {
+  background: rgb(219, 36, 36);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.cart-link {
+  position: relative;
+}
+
+/* BADGE STYLE */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background-color: #ffeb3b;
+  color: black;
+  padding: 3px 7px;
+  font-size: 12px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+
